@@ -1,0 +1,172 @@
+/* Base styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; 
+    background-color: #000019;
+    background-image: url('https://i.imgur.com/fka4zBM.gif'); 
+    background-repeat: repeat; 
+    background-size: auto;
+    background-position: top left;
+    user-select: none;
+}
+
+
+body {
+  cursor: url('Colorful Rainbow.cur'), auto;
+}
+
+.top-left-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 175px;
+    height: auto;
+    pointer-events: none;
+}
+
+.top-right-image {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 0;
+    width: 80px;
+    height: auto;
+    pointer-events: none;
+}
+
+.under-netscape {
+    position: absolute;
+    top: 115px; 
+    right: 20px; 
+    z-index: 0;
+    width: 80px; 
+    height: auto;
+}
+
+.bottom-right-image {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    z-index: 10;
+    width: 100px;
+    height: auto;
+    pointer-events: none;
+}
+
+
+/* Windows 98 window styles */
+.window {
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    text-align: left;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Window control styles */
+.title-bar-controls span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 14px;
+    background: #c0c0c0;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+/* Form elements */
+legend {
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+}
+
+/* Button styles */
+button {
+    font-size: 1.1rem;
+}
+
+/* Construction banner styles */
+.construction-banner {
+    position: fixed;
+    bottom: 35px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-color: transparent;
+}
+
+@keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+}
+
+.mobile-warning {
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 15px;
+    animation: rainbow 8s infinite;
+    margin-top: 0px;
+}
+
+
+.construction-banner img {
+    display: block;
+    height: auto;
+    width: auto;
+}
+
+/* Taskbar styles */
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    background: #c0c0c0;
+    background-image: url('https://imgur.com/JNWniBf.png');
+    background-repeat: repeat-x;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    box-shadow: inset 0 1px #dfdfdf, inset 0 2px #fff;
+}
+
+img.start-img {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 35px;
+    width: auto;
+    display: block;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
