@@ -14,7 +14,7 @@ html, body {
 /* Decorative GIF positioning */
 .top-left-image {
     position: absolute;
-    top: 10px;
+    top: 5px;
     left: 5px;
     width: 175px;
     height: auto;
@@ -50,7 +50,7 @@ html, body {
 
 /* Main window styles */
 .main-window {
-    margin: 10px auto;
+    margin: 15px auto;
     width: 90%;
     max-width: 820px;
     position: relative;
@@ -59,6 +59,20 @@ html, body {
 
 .window-body {
     padding: 16px;
+}
+
+/* Typography */
+h1 {
+    margin-top: 0;
+    color: #000080;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
 }
 
 /* Window control styles */
@@ -79,20 +93,6 @@ html, body {
     margin: 0;
 }
 
-/* Typography */
-h1 {
-    margin-top: 0;
-    color: #000080;
-    font-size: 2.2rem;
-    margin-bottom: 1.15rem;
-}
-
-p {
-    font-size: 1.15rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-}
-
 /* Form elements */
 legend {
     font-size: 1.2rem;
@@ -111,7 +111,7 @@ button {
     width: 100%;
     display: flex;
     justify-content: center;
-    z-index: 0;
+    z-index: 1;
     pointer-events: none;
 }
 
@@ -124,7 +124,7 @@ button {
     background: #c0c0c0;
     display: flex;
     align-items: center;
-    z-index: 0;
+    z-index: 1;
     box-shadow: inset 0 1px #dfdfdf, inset 0 2px #fff;
     pointer-events: none;
 }
@@ -135,22 +135,8 @@ button {
     left: 0;
     height: 35px;
     width: auto;
-    z-index: 0;
     pointer-events: none;
 }
-
- /*
-Media query for smaller screens 
-@media screen and (max-height: 600px) {
-    .main-window {
-        margin-bottom: 120px;
-    }
-    
-    html, body {
-        overflow-y: auto;
-    }
-}
-*/
 
 /* Mobile warning animation */
 @keyframes rainbow {
@@ -166,9 +152,8 @@ Media query for smaller screens
 
 .mobile-warning {
     text-align: center;
-    font-family: 'Comic Sans MS', sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     font-size: 15px;
     animation: rainbow 8s infinite;
-    z-index: 2;
-    margin-top: 5px;
+    margin-top: 0;
 }
