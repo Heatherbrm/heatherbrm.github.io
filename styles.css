@@ -139,7 +139,8 @@ button {
     pointer-events: none;
 }
 
-/* Media query for smaller screens */
+ /*
+Media query for smaller screens 
 @media screen and (max-height: 600px) {
     .main-window {
         margin-bottom: 120px;
@@ -149,6 +150,7 @@ button {
         overflow-y: auto;
     }
 }
+*/
 
 /* Mobile warning animation */
 @keyframes rainbow {
