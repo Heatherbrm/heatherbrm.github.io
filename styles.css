@@ -8,11 +8,11 @@ html, body {
     background-image: url('gifs/space4.gif'); 
     background-repeat: repeat; 
     user-select: none;
-    cursor: url('http://www.rw-designer.com/cursor-view/106419.png'), auto;
+    cursor: url('cursors/spaceship.cur'), auto;
 }
 
 button, a, input, select, textarea {
-    cursor: url('http://www.rw-designer.com/cursor-view/106419.png'), auto;
+    cursor: url('cursors/spaceship.cur'), auto;
 }
 
 /* Decorative GIF positioning */
