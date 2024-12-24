@@ -8,7 +8,11 @@ html, body {
     background-image: url('gifs/space4.gif'); 
     background-repeat: repeat; 
     user-select: none;
-    cursor: url('cursors/Colorful Rainbow.cur'), auto;
+    cursor: url('http://www.rw-designer.com/cursor-view/106419.png'), auto;
+}
+
+button, a, input, select, textarea {
+    cursor: url('http://www.rw-designer.com/cursor-view/106419.png'), auto;
 }
 
 /* Decorative GIF positioning */
