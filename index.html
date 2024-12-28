@@ -42,11 +42,33 @@
         </fieldset>
       </div>
     </div>
-
-    <!-- Mobile warning -->
-    <div class="mobile-warning">
-      This website is best viewed on a desktop.
+    
+    <!-- Mobile Warning Pop-Up -->
+    <div class="mobile-overlay"></div> <!-- Transparent overlay -->
+    <div class="mobile-popup window">
+        <div class="title-bar">
+            <div class="title-bar-text">Mobile Device Detected</div>
+            <div class="title-bar-controls">
+                <button aria-label="Close" onclick="closePopup()">×</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="message-container">
+                <img src="gifs/redx.png" alt="Error" class="error-icon">
+                <p>This website is best viewed on a desktop computer.</p>
+            </div>
+            <div class="field-row" style="justify-content: center">
+                <button onclick="closePopup()">OK</button>
+            </div>
+        </div>
     </div>
+
+    <script>
+        function closePopup() {
+          document.querySelector('.mobile-popup').style.display = 'none';
+          document.querySelector('.mobile-overlay').style.display = 'none';
+        }
+    </script>
 
     <!-- Footer Elements -->
     <div class="construction-banner">
