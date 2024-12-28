@@ -1,0 +1,206 @@
+body {
+  color: #b240d2;
+  font-family: ms gothic, courier;
+  margin: 0;
+  margin-top: 5px;
+  font-size:16px;
+  background-image: url(gifs/abstractplaid.gif);
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+@font-face {
+    font-family: 'PixelFont';
+    src: url('../fonts/PixelOperator-Bold.ttf') format('truetype');
+}
+
+h1 {
+    font-family: PixelFont, sans-serif;
+    font-size: 37px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+}
+
+/*WELCOME TEXT*/
+h2 {
+  font-family: PixelFont;
+  font-weight: bold;
+  font-size:25px;
+}
+
+p {
+  font-family: PixelFont;
+  font-size:20px;
+}
+
+.main, .buttons {
+  width: 780px;
+  padding: 2px 9px;
+  background-color: #fff;
+}
+
+.main, .buttons, .wrapper{
+    margin-left: 160px;
+    margin-bottom: 8px;
+}
+
+/*CONTROLS WHITE BOX WITH WELCOME TEXT*/
+.first{
+  margin-top: 10px;
+}
+
+.main {
+  border: 1px solid hotpink;
+  border-radius: 5px;
+  text-align: cente;
+  overflow: auto;
+}
+
+.box, .box3{
+  width: 374px;
+  max-height: 195px;
+  background-color: #fff;
+  border: 1px solid hotpink;
+  border-radius: 5px;
+  padding: 2px 9px;
+  text-align: left;
+  overflow: auto;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/*TOP OF PANEL TASK BAR*/
+.idk{
+    width: 972px;
+    margin: 0 auto;
+    background-color: #c269ff;
+    height: 15px;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #c269ff;
+    border-bottom: collapse;
+    text-align: right;
+    font-family: ms gothic, courier;
+    color: white;
+    padding:5px 8px 5px 0;
+    font-size: 14px;
+}
+
+a{
+    color: #0073e6;
+}
+
+/*CONTROLS BACKGROUND OF MAIN WINDOW*/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 980px;
+  overflow: auto;
+  margin: 0 auto;
+  min-height: 795px;
+  max-height: 795px;
+  border-radius: 0 0 5px 5px;
+  border: 2px solid #c269ff;
+  background-attachment: scroll;
+  background-image: url("gifs/wavyrainbow.gif");
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-origin: padding-box;
+  background-clip: border-box;
+}
+
+/*
+.image {
+  width: 130px;
+  height: 130px;
+  border: 1px solid hotpink;
+  background: url("badpostcards small.png");
+  opacity: 0.85;
+  border-radius: 5px;
+  background-size: 130px;
+  margin-top:10px;
+  margin-left:10px;
+}
+
+.profilewrapper{
+  display: flex;
+}
+
+.item{
+  width:310px;
+  margin-left:25px;
+  justify-content: center;
+}
+
+.profile {
+  margin-left:40px;
+  font-size:12px;
+  justify-content: center;
+}
+*/
+
+.box {
+  margin-right: 12px;
+}
+
+.buttons {
+  border: 1px solid hotpink;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/*CONTROLS NAV BAR POSITION*/
+nav {
+  z-index: 99;
+  position: absolute;
+  margin-top:0;
+  width: 145px;
+  min-height: 760px;
+  max-height: 760px;
+  margin-left: 10px;
+}
+
+/*CONTROLS NAV BUTTON SIZE*/
+.navlink, .sideimage{
+  box-sizing: border-box;
+  width: 130px;
+  margin-top: 15px;
+}
+
+/*CONTROLS NAV BUTTON/TEXT POSITION*/
+.navlink {
+  display: block;
+  height: 35px;
+  border-radius: 5px;
+  /*BELOW: MOVES TEXT*/
+  padding: 8px 0;
+  color: white;
+  text-align: center;
+}
+
+/*BELOW: STYLES TEXT*/
+.navlinktext {
+  font-family: PixelFont;
+  font-size: 18px;
+  text-decoration: none!important;
+}
+
+
+/*CUTE CHARACTER IN LOWER RIGHT*/
+.character{
+  position: fixed; 
+  left: 12px; 
+  bottom: 1px; 
+  width: 130px;
+  height:192px;
+  background-image: url(gifs/nm397.gif);
+  background-size: 130px 192px;
+}
