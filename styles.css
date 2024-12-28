@@ -149,8 +149,11 @@ button {
 }
 
 /* Mobile pop-up warning */
-.mobile-popup {
+.mobile-popup, .mobile-overlay {
     display: none;
+}
+
+.mobile-popup {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -159,6 +162,17 @@ button {
     z-index: 9999;
 }
 
+.mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9998;
+}
+
+/* Popup content styles */
 .mobile-popup .title-bar-text {
     padding-left: 3px;
     font-family: 'PixelFont';
@@ -200,30 +214,3 @@ button {
     font-family: 'PixelFont';
     font-size: 18px;
 }
-
-.mobile-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 9998;
-}
-
-/* Default: Hide the popup */
-.mobile-popup, .mobile-overlay {
-    display: none;
-}
-
-/* Show the popup and overlay for mobile devices */
-@media screen and (max-width: 768px) {
-    .mobile-popup, .mobile-overlay {
-        display: block;
-    }
-}
-
-
-
-
