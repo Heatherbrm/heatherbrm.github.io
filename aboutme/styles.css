@@ -2,51 +2,66 @@ body {
   color: #b240d2;
   font-family: ms gothic, courier;
   margin: 0;
-  margin-top: 5px;
   font-size:16px;
-  background-image: url(gifs/abstractplaid.gif);
+  background-image: url(gifs/starszoomout.webp);
   background-size: auto;
   background-repeat: repeat;
+  cursor: url('../cursors/heart.cur'), auto;
 }
 
 @font-face {
-    font-family: 'PixelFont';
-    src: url('../fonts/PixelOperator-Bold.ttf') format('truetype');
-}
-
-h1 {
-    font-family: PixelFont, sans-serif;
-    font-size: 37px;
-    letter-spacing: 2px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-weight: bold;
-    position: relative;
-    color: #fff;
-}
-
-/*WELCOME TEXT*/
-h2 {
-  font-family: PixelFont;
-  font-weight: bold;
-  font-size:25px;
+  font-family: 'PixelFont';
+  src: url('../fonts/PixelOperator-Bold.ttf') format('truetype');
 }
 
 p {
   font-family: PixelFont;
-  font-size:20px;
+  font-size: 20px;
+  margin: 10px 0; /* Reduces line spacing between paragraphs */
+  padding: 0;
+  line-height: 1.1;
+}
+
+/*ABOUT ME TEXT*/
+.about-glitter {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.about-me-gif {
+  max-height: 100%;
+  height: auto;
+}
+
+.butterfly-left,
+.butterfly-right {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 5px;
+  right: 10px;
+}
+
+.butterfly-left {
+  top: 5px;
+  left: 11px;
+}
+
+.butterfly-right {
+  top: 5px;
+  right: 10px;
+  transform: scaleX(-1);
 }
 
 .main, .buttons {
-  width: 780px;
+  width: 760px;
   padding: 2px 9px;
   background-color: #fff;
 }
 
 .main, .buttons, .wrapper{
-    margin-left: 160px;
-    margin-bottom: 8px;
+  margin-left: 180px;
+  margin-bottom: 8px;
 }
 
 /*CONTROLS WHITE BOX WITH WELCOME TEXT*/
@@ -54,38 +69,184 @@ p {
   margin-top: 10px;
 }
 
-.main {
-  border: 1px solid hotpink;
-  border-radius: 5px;
-  text-align: cente;
-  overflow: auto;
-}
-
-.box, .box3{
-  width: 374px;
-  max-height: 195px;
-  background-color: #fff;
-  border: 1px solid hotpink;
-  border-radius: 5px;
-  padding: 2px 9px;
-  text-align: left;
-  overflow: auto;
-}
-
 .wrapper {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+    align-items: center; /* Center align rows horizontally */
+    gap: 10px; /* Adds spacing between rows */
+}
+
+.row {
+    display: flex; /* Keeps boxes in each row side by side */
+    justify-content: center; /* Centers the row */
+    gap: 10px; /* Adds spacing between boxes in the row */
+}
+
+.box2, .box3{
+  width: 360px;
+  max-height: 250px;
+  background-color: #ffcefe;
+  border: 2px solid #f029ba;
+  border-radius: 5px;
+  padding: 5px 9px;
+  text-align: left;
+  color: #011fa5;
+  overflow: auto;
+}
+
+.box4{
+  width: 322px;
+  height: 242px;
+  border-radius: 5px;
+  padding: 5px 0;
+  overflow: visible;
+  justify-content: left;
+}
+
+.box4-img {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.box5 {
+  width: 440px;
+  height: auto;
+  border-radius: 5px;
+  padding: 5px 9px;
+  display: flex; /* Added */
+  align-items: center; /* Vertically aligns content */
+  justify-content: center; /* Horizontally centers content */
+  overflow: visible;
+  /*background-color: rgba(0,0,0,0.4);;*/
+}
+
+.ipod-container {
+  background-color: #ffcefe;
+  border: 2px solid #f029ba;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: "Chicago", monospace;
+  height: 208px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ipod-screen {
+  background: #d4d4d4;
+  border-radius: 10px;
+  padding: 6px;
+  margin-right: 10px;
+  flex-grow: 1;
+  height: auto;
+  min-height: 190px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+  font-size: 14px;
+}
+
+.screen-header {
+  text-align: center;
+  border-bottom: 1px solid #999;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.song-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.song-item {
+  padding: 3px 5px;
+  cursor: pointer;
+  color: #666;
+}
+
+.song-item.selected {
+  background: #0066ff;
+  color: white;
+  border-radius: 3px;
+}
+
+.ipod-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center elements vertically */
+  width: 100px;
+  height: 100px;
+  background-color: #f029ba;
+  border-radius: 50%;
+  gap: 5px;
+  padding: 5px;
+}
+
+.controls-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* Reduced gap between buttons */
+}
+
+.center-button {
+  width: 25px; /* Made smaller */
+  height: 25px; /* Made smaller */
+  background: #ffcefe; /* Light pink background */
+  border: 1px solid #f029ba;
+  border-radius: 50%;
+  cursor: pointer;
   justify-content: center;
 }
 
+.wheel-button, .menu-button, .play-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 3px;
+  color: white;
+  font-size: 12px;
+}
+
+.menu-button {
+  font-weight: bold;
+  margin-bottom: 5px; /* Reduced margin */
+}
+
+.play-button {
+  margin-top: 5px; /* Reduced margin */
+}
+
+.mood-icon {
+    width: 25px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.main {
+  border: 2px solid #f029ba;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f029ba;
+  position: relative;
+  overflow: hidden;
+  height: 85px;
+}
+
 /*TOP OF PANEL TASK BAR*/
-.idk{
+.idk {
     width: 972px;
-    margin: 0 auto;
-    background-color: #c269ff;
-    height: 15px;
+    margin: 20px auto 0 auto;
+    background-color: #f029ba;
+    height: 24px;
     border-radius: 5px 5px 0 0;
-    border: 1px solid #c269ff;
-    border-bottom: collapse;
+    border: 2px solid #f029ba;
+    border-bottom: none;
     text-align: right;
     font-family: ms gothic, courier;
     color: white;
@@ -93,8 +254,12 @@ p {
     font-size: 14px;
 }
 
-a{
-    color: #0073e6;
+a {
+  color: #0073e6;
+}
+
+a:hover {
+  cursor: url('../cursors/hearthelp.cur'), auto;
 }
 
 /*CONTROLS BACKGROUND OF MAIN WINDOW*/
@@ -102,57 +267,26 @@ a{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 980px;
+  width: 972px;
   overflow: auto;
   margin: 0 auto;
+  border-top: 0;
   min-height: 795px;
   max-height: 795px;
   border-radius: 0 0 5px 5px;
-  border: 2px solid #c269ff;
+  border: 2px solid #f029ba;
   background-attachment: scroll;
-  background-image: url("gifs/wavyrainbow.gif");
-  background-size: cover;
-  background-repeat: repeat-y;
-  background-origin: padding-box;
-  background-clip: border-box;
+  background-image: url("gifs/rbowlinebg.gif");
+  background-size: auto;
+  background-repeat: repeat;
 }
 
-/*
-.image {
-  width: 130px;
-  height: 130px;
-  border: 1px solid hotpink;
-  background: url("badpostcards small.png");
-  opacity: 0.85;
-  border-radius: 5px;
-  background-size: 130px;
-  margin-top:10px;
-  margin-left:10px;
-}
-
-.profilewrapper{
-  display: flex;
-}
-
-.item{
-  width:310px;
-  margin-left:25px;
-  justify-content: center;
-}
-
-.profile {
-  margin-left:40px;
-  font-size:12px;
-  justify-content: center;
-}
-*/
-
-.box {
-  margin-right: 12px;
+.idk, .container {
+    box-sizing: border-box;
 }
 
 .buttons {
-  border: 1px solid hotpink;
+  border: 2px solid #f029ba;
   border-radius: 5px;
   margin-bottom: 15px;
 }
@@ -162,10 +296,14 @@ nav {
   z-index: 99;
   position: absolute;
   margin-top:0;
-  width: 145px;
-  min-height: 760px;
-  max-height: 760px;
-  margin-left: 10px;
+  width: 150px;
+  min-height: 792px;
+  max-height: 792px;
+  padding-left: 20px;
+  border-right: 2px solid #f029ba;
+  background-image: url("pics/pinkcheetah.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
 }
 
 /*CONTROLS NAV BUTTON SIZE*/
@@ -184,6 +322,7 @@ nav {
   padding: 8px 0;
   color: white;
   text-align: center;
+  border: 2px solid #f029ba;
 }
 
 /*BELOW: STYLES TEXT*/
@@ -193,14 +332,20 @@ nav {
   text-decoration: none!important;
 }
 
+.sideimage {
+    margin-top: 15px;
+    margin-left: 15px; /* Moves the images to the right */
+    width: 130px; /* Keeps consistent size */
+}
+
 
 /*CUTE CHARACTER IN LOWER RIGHT*/
 .character{
   position: fixed; 
-  left: 12px; 
-  bottom: 1px; 
-  width: 130px;
-  height:192px;
-  background-image: url(gifs/nm397.gif);
-  background-size: 130px 192px;
+  left: 30px; 
+  bottom: -5px; 
+  width: 150px;
+  height: 140px;
+  background-image: url(gifs/computergirl.gif);
+  background-size: 150px 140px;
 }

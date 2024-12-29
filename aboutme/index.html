@@ -12,7 +12,7 @@
     <script type="text/javascript">
         // <![CDATA[
         var colour="random"; // in addition to "random" can be set to any valid colour eg "#f0f" or "red"
-        var sparkles=50;
+        var sparkles=100;
 
         /****************************
         *  Tinkerbell Magic Sparkle *
@@ -210,7 +210,6 @@
   </head>
   
   <body>
-    <h1>ABOUT ME</h1>
 
     <!--TOP OF PANEL TASK BAR-->
     <div class="idk">- ☐ X</div>
@@ -221,7 +220,7 @@
       <nav>
         <div id="templaterr-sidebar">
           <!--COLORS, TEXT, AND LINKS ON SIDEBAR BUTTONS-->
-          <a class="navlinktext" href="heatherbroome.com">
+          <a class="navlinktext" href="https://www.heatherbroome.com">
             <div class="navlink" style="background-color:hotpink;margin-top:10px;">Home</div>
           </a>
           <a class="navlinktext" href="index.html">
@@ -254,82 +253,114 @@
       <!--FIRST BOX-->
       <div class="first">
         <div class="main">
-          <h2>Welcome to my page!</h2>
-          <p>I will tell you about myself here.</p>
+          <img src="gifs/butterflygreen.gif" class="butterfly-left" alt="Butterfly">
+          <div class="about-glitter">
+              <img src="gifs/ABOUTME.gif" alt="About Me" class="about-me-gif">
+          </div>
+          <img src="gifs/butterflygreen.gif" class="butterfly-right" alt="Butterfly">
         </div>
+
       </div>
 
-      <!--LINE STORING SECOND AND THIRD BOX-->
       <div class="wrapper">
-        <!--SECOND BOX LINE 1-->
-        <div class="box">
-          <p>
-            <b>My Links</b> 
-            <img src="google.com" style="vertical-align: middle;" alt=" ">
-          </p>
+        <!--LINE STORING SECOND AND THIRD BOX-->
+        <div class="row">
+          <!--SECOND BOX-->
+          <div class="box2">
+            <p> <b>Name: </b>Heather</p>
+            <p><b>Age: </b>22</p>
+            <p><b>From: </b>Sumrall, Mississippi</p>
+            <p><b>Lives In: </b>Champaign, Illinois</p>
+            <p><b>Work: </b>Computer Science PhD Student</p>
+            <p><b>Mood:</b><img src="pics/smileyface.png" alt="Smiley Face" class="mood-icon"></p>
+          </div>
 
-          <p>
-            <a href="https://www.instagram.com/heatherdixieanna/">Instagram</a>
-          </p>
+          <!--THIRD BOX-->
+          <div class="box3">
+            <p>
+              Welcome to my little corner of the internet! 
+              I created this page for fun as a way to explore my love for nostalgic, 
+              personal websites and to express myself more creatively.
+            </p>
 
-          <!--SECOND BOX LINE 2-->
-          <p>
-            email: hbroome@illinois.edu <img src=" " alt=" ">
-          </p>
-
-          <!--SECOND BOX LINE 3-->
-          <p>
-            link to me: 
-            <img src="google.com" style="vertical-align: middle;">
-          </p>
+            <p>
+              This website is very new, but I have plans for much more development!
+            </p>
+          </div>
         </div>
+        
+        <div class="row">
+          <div class="box4">
+            <img src="gifs/meAOL.gif" class="box4-img">
+          </div>
+          
+          <div class="box5">
+            <div class="ipod-container">
+              <div class="ipod-screen">
+                <div class="screen-header">Now Playing</div>
+                <ul class="song-list">
+                  <li class="song-item selected">1. Mr. Brightside - The Killers</li>
+                  <li class="song-item">2. Hey There Delilah - Plain White T's</li>
+                  <li class="song-item">3. Chasing Cars - Snow Patrol</li>
+                  <li class="song-item">4. How to Save a Life - The Fray</li>
+                  <li class="song-item">5. Sugar, We're Goin Down - FOB</li>
+                </ul>
+              </div>
 
-        <!--THIRD BOX-->
-        <div class="box3">
-          <p>
-           <b>FAQ</b> 
-           <img src="google.com" style="vertical-align: middle;" alt=" ">
-          </p>
-
-          <p>
-            Can I use [thing you made]?
-          </p>
-
-          <p>
-            If it's on the <a href="google.com">graphics page</a> then yes!
-          </p>
-
-          <p>
-            My collage art is also under <a href="google.com" alt=" ">this</a> creative commons license.
-          </p>
-
-          <p>
-            <b>Can you help me with my site?</b>
-          </p>
-
-          <p>
-            Probably not! 
-          </p>
-
-          <p>
-            <b>What do you use to make stuff?</b>
-          </p>
-
-          <p>
-            ...
-          </p>
-
-          <p>
-            ...
-          </p>
-
-          <p>
-            ...
-          </p>
-        </div>
+              <div class="ipod-controls">
+                <button class="menu-button">MENU</button>
+                <div class="controls-row">
+                  <button class="wheel-button prev-button">◀</button>
+                  <button class="center-button"></button>
+                  <button class="wheel-button next-button">▶</button>
+                </div>
+                <button class="wheel-button play-button">▶❙❙</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
     
     <div class="character"></div>
+    
+    <!--
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const songItems = document.querySelectorAll('.song-item');
+        let currentSelected = 0;
+
+        function updateSelection(newIndex) {
+          songItems[currentSelected].classList.remove('selected');
+          currentSelected = newIndex;
+          songItems[currentSelected].classList.add('selected');
+        }
+
+        document.querySelector('.next-button').addEventListener('click', function() {
+          const newIndex = (currentSelected + 1) % songItems.length;
+          updateSelection(newIndex);
+        });
+
+        document.querySelector('.prev-button').addEventListener('click', function() {
+          const newIndex = (currentSelected - 1 + songItems.length) % songItems.length;
+          updateSelection(newIndex);
+        });
+
+        // Make the buttons look pressed when clicked
+        const buttons = document.querySelectorAll('.ipod-controls button');
+        buttons.forEach(button => {
+          button.addEventListener('mousedown', function() {
+            this.style.opacity = '0.7';
+          });
+          button.addEventListener('mouseup', function() {
+            this.style.opacity = '1';
+          });
+          button.addEventListener('mouseleave', function() {
+            this.style.opacity = '1';
+          });
+        });
+      });
+    </script>
+    -->
   </body>
 </html>
