@@ -229,12 +229,14 @@
           <a class="navlinktext" href="https://www.instagram.com/heatherdixieanna/">
             <div class="navlink" style="background-color:#39cb67;">Instagram</div>
           </a>
+          <!--
           <a class="navlinktext" href="google.com">
             <div class="navlink" style="background-color:#35c4f8;">-</div>
           </a>
           <a class="navlinktext" href="google.com">
             <div class="navlink" style="background-color:#d580ff;">-</div>
           </a>
+          -->
           
           <!--CUTE PICS ON RIGHT SIDE BAR-->
           <div class="sideimage">
@@ -244,8 +246,13 @@
             </div>
           </div>
           
-          <div class="sideimage"> <img src="gifs/s004.gif" alt=" "> </div>
-          <div class="sideimage"> <img src="gifs/s158.gif" alt=" "> </div>
+          <div class="sideimage"> <img src="gifs/holosmiley.gif" alt=" "> </div>
+          <div class="sideimage"> <img src="gifs/15.png" alt=" "> </div>
+          <div class="sideimage"> <img src="../buttons/ilikecomputer.png" alt=" "> </div>
+          <div class="sideimage"> <img src="../buttons/trustme.webp" alt=" "> </div>
+          <div class="sideimage"> <img src="../buttons/neocities.gif" alt=" "> </div>
+          <div class="sideimage"> <img src="gifs/spinningcomputer.gif" alt=" "> </div>
+          <div class="sideimage"> <img src="gifs/transfer.gif" alt=" "> </div>
           
         </div>
       </nav>
@@ -253,11 +260,11 @@
       <!--FIRST BOX-->
       <div class="first">
         <div class="main">
-          <img src="gifs/butterflygreen.gif" class="butterfly-left" alt="Butterfly">
+          <img src="gifs/butterflytrippy.gif" class="butterfly-left" alt="Butterfly">
           <div class="about-glitter">
               <img src="gifs/ABOUTME.gif" alt="About Me" class="about-me-gif">
           </div>
-          <img src="gifs/butterflygreen.gif" class="butterfly-right" alt="Butterfly">
+          <img src="gifs/butterflytrippy.gif" class="butterfly-right" alt="Butterfly">
         </div>
 
       </div>
@@ -297,13 +304,23 @@
           <div class="box5">
             <div class="ipod-container">
               <div class="ipod-screen">
-                <div class="screen-header">Now Playing</div>
+                <div class="screen-header">
+                  <img src="gifs/musicnote.gif" class="musicnote-left" alt="iPod Gem">
+                  <img src="gifs/heartgem.gif" class="heartgem-left" alt="iPod Gem">
+                  Now Playing
+                  <img src="gifs/heartgem.gif" class="heartgem-right" alt="iPod Gem">
+                  <img src="gifs/musicnote.gif" class="musicnote-left" alt="iPod Gem">
+                </div>
+
                 <ul class="song-list">
-                  <li class="song-item selected">1. Mr. Brightside - The Killers</li>
-                  <li class="song-item">2. Hey There Delilah - Plain White T's</li>
-                  <li class="song-item">3. Chasing Cars - Snow Patrol</li>
-                  <li class="song-item">4. How to Save a Life - The Fray</li>
-                  <li class="song-item">5. Sugar, We're Goin Down - FOB</li>
+                  <li class="song-item">Iris - Goo Goo Dolls</li>
+                  <li class="song-item">Cherry Wine - Hozier</li>
+                  <li class="song-item">Seasons - Sam Austins</li>
+                  <li class="song-item">All The Things She Said - t.A.T.u.</li>
+                  <li class="song-item">Fade Into You - Mazzy Star</li>
+                  <li class="song-item">SimpsonWave1995 - FrankJavCee</li>
+                  <li class="song-item">Resonance - HOME</li>
+                  <li class="song-item">Everything Is Romantic - Charli XCX, Caroline Polachek</li>
                 </ul>
               </div>
 
@@ -324,43 +341,5 @@
     
     <div class="character"></div>
     
-    <!--
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const songItems = document.querySelectorAll('.song-item');
-        let currentSelected = 0;
-
-        function updateSelection(newIndex) {
-          songItems[currentSelected].classList.remove('selected');
-          currentSelected = newIndex;
-          songItems[currentSelected].classList.add('selected');
-        }
-
-        document.querySelector('.next-button').addEventListener('click', function() {
-          const newIndex = (currentSelected + 1) % songItems.length;
-          updateSelection(newIndex);
-        });
-
-        document.querySelector('.prev-button').addEventListener('click', function() {
-          const newIndex = (currentSelected - 1 + songItems.length) % songItems.length;
-          updateSelection(newIndex);
-        });
-
-        // Make the buttons look pressed when clicked
-        const buttons = document.querySelectorAll('.ipod-controls button');
-        buttons.forEach(button => {
-          button.addEventListener('mousedown', function() {
-            this.style.opacity = '0.7';
-          });
-          button.addEventListener('mouseup', function() {
-            this.style.opacity = '1';
-          });
-          button.addEventListener('mouseleave', function() {
-            this.style.opacity = '1';
-          });
-        });
-      });
-    </script>
-    -->
   </body>
 </html>
