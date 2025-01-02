@@ -422,6 +422,33 @@ nav {
 
 
 /* -------------- MOBILE POPUP WARNING -------------- */
+.window {
+    border: 2px solid #000;
+    background: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.title-bar {
+    background: #c0c0c0;
+    padding: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-bar-controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.window-body {
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
 .mobile-popup, .mobile-overlay {
     display: none;
 }
