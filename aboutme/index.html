@@ -2,17 +2,16 @@
 <html lang="en-gb">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heather's About Me</title>
-    <link href="styles.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="Shortcut to Home" href="gifs/15.png">
-    <meta property="og:url" content="www.heatherbroome.com">
-    <meta property="og:title" content="About Me">
+    
+    <link href="styles.css" rel="stylesheet">
 
     <!--Pointer Sparkles-->
     <script type="text/javascript">
         // <![CDATA[
         var colour="random"; // in addition to "random" can be set to any valid colour eg "#f0f" or "red"
-        var sparkles=100;
+        var sparkles=200;
 
         /****************************
         *  Tinkerbell Magic Sparkle *
@@ -212,67 +211,47 @@
   <body>
 
     <!--TOP OF PANEL TASK BAR-->
-    <div class="idk">- ☐ X</div>
+    <div class="taskbar">- ☐ X</div>
     
+    <!--MAIN WINDOW CONTAINER-->
     <div class="container">
       
-      <!--RIGHT-SIDE NAVIGATION PANEL-->
+      <!--SIDE NAVIGATION PANEL-->
       <nav>
-        <div id="templaterr-sidebar">
+        <div id="sidebar">
           <!--COLORS, TEXT, AND LINKS ON SIDEBAR BUTTONS-->
-          <a class="navlinktext" href="https://www.heatherbroome.com">
-            <div class="navlink" style="background-color:hotpink;margin-top:10px;">Home</div>
+          <a class="navlinktext" href="/">
+            <div class="navlink" style="background-color:deepskyblue;margin-top:10px;">Home</div>
           </a>
           <a class="navlinktext" href="index.html">
-            <div class="navlink" style="background-color:#ffbb00;">About Me</div>
+            <div class="navlink" style="background-color:#39cb67;">About Me</div>
           </a>
           <a class="navlinktext" href="https://www.instagram.com/heatherdixieanna/">
-            <div class="navlink" style="background-color:#39cb67;">Instagram</div>
+            <div class="navlink" style="background-color:#ffc012;">Instagram</div>
           </a>
-          <!--
-          <a class="navlinktext" href="google.com">
-            <div class="navlink" style="background-color:#35c4f8;">-</div>
-          </a>
-          <a class="navlinktext" href="google.com">
-            <div class="navlink" style="background-color:#d580ff;">-</div>
-          </a>
-          -->
           
           <!--CUTE PICS ON RIGHT SIDE BAR-->
-          <div class="sideimage">
-            <div class="slideshow-container">
-            <div class="mySlides fade" style="display: none;"><img src="slide1.png" style="width:100%"></div>
-            <div class="mySlides fade" style="display: none;"><img src="slide2.png" style="width:100%"></div>
-            </div>
-          </div>
-          
           <div class="sideimage"> <img src="gifs/holosmiley.gif" alt=" "> </div>
           <div class="sideimage"> <img src="gifs/15.png" alt=" "> </div>
           <div class="sideimage"> <img src="../buttons/ilikecomputer.png" alt=" "> </div>
           <div class="sideimage"> <img src="../buttons/trustme.webp" alt=" "> </div>
-          <div class="sideimage"> <img src="../buttons/neocities.gif" alt=" "> </div>
+          <div class="sideimage"> <a href="https://neocities.org/browse"> <img src="../buttons/neocities.gif"> </a> </div>
           <div class="sideimage"> <img src="gifs/spinningcomputer.gif" alt=" "> </div>
           <div class="sideimage"> <img src="gifs/transfer.gif" alt=" "> </div>
-          
         </div>
       </nav>
       
       <!--FIRST BOX-->
-      <div class="first">
-        <div class="main">
-          <img src="gifs/butterflytrippy.gif" class="butterfly-left" alt="Butterfly">
-          <div class="about-glitter">
-              <img src="gifs/ABOUTME.gif" alt="About Me" class="about-me-gif">
-          </div>
-          <img src="gifs/butterflytrippy.gif" class="butterfly-right" alt="Butterfly">
-        </div>
-
+      <div class="box1">
+        <img src="gifs/butterflytrippy.gif" class="butterfly-left" alt="Butterfly">
+        <div class="about-glitter"> <img src="gifs/aboutme-2.gif"> </div>
+        <img src="gifs/butterflytrippy.gif" class="butterfly-right" alt="Butterfly">
       </div>
 
-      <div class="wrapper">
-        <!--LINE STORING SECOND AND THIRD BOX-->
+      <div class="content-boxes">
+        
+        <!--ROW STORING SECOND AND THIRD BOX-->
         <div class="row">
-          <!--SECOND BOX-->
           <div class="box2">
             <p> <b>Name: </b>Heather</p>
             <p><b>Age: </b>22</p>
@@ -282,7 +261,6 @@
             <p><b>Mood:</b><img src="pics/smileyface.png" alt="Smiley Face" class="mood-icon"></p>
           </div>
 
-          <!--THIRD BOX-->
           <div class="box3">
             <p>
               Welcome to my little corner of the internet! 
@@ -296,6 +274,7 @@
           </div>
         </div>
         
+        <!--ROW STORING THIRD AND FOURTH BOX-->
         <div class="row">
           <div class="box4">
             <img src="gifs/meAOL.gif" class="box4-img">
@@ -340,6 +319,48 @@
     </div>
     
     <div class="character"></div>
+    
+    <!-- Mobile Warning Pop-Up -->
+    <div class="mobile-overlay"></div> <!-- Transparent overlay -->
+    <div class="mobile-popup window">
+        <div class="title-bar">
+            <div class="title-bar-text">Mobile Device Detected</div>
+            <div class="title-bar-controls">
+                <button aria-label="Close" onclick="closePopup()">×</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <div class="message-container">
+                <img src="gifs/redx.png" alt="Error" class="error-icon">
+                <p>This website is best viewed on a desktop computer.</p>
+            </div>
+            <div class="field-row" style="justify-content: center">
+                <button onclick="closePopup()">OK</button>
+            </div>
+        </div>
+    </div>
+    
+    <!--Check if mobile-->
+    <script type="text/javascript">
+      // Function to check if the user is on a mobile device
+      function checkMobile() {
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent); // Detect mobile devices
+        if (isMobile) {
+          // Show the popup and overlay
+          document.querySelector('.mobile-popup').style.display = 'block';
+          document.querySelector('.mobile-overlay').style.display = 'block';
+        }
+      }
+
+      // Add the event listener to run the check on page load
+      window.addEventListener('load', checkMobile);
+
+      // Close the popup and overlay
+      function closePopup() {
+        document.querySelector('.mobile-popup').style.display = 'none';
+        document.querySelector('.mobile-overlay').style.display = 'none';
+      }
+    </script>
     
   </body>
 </html>

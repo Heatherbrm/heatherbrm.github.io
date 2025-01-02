@@ -6,39 +6,104 @@ body {
   background-image: url(gifs/starszoomout.webp);
   background-size: auto;
   background-repeat: repeat;
-  cursor: url('../cursors/heart.cur'), auto;
-  -webkit-user-select: none;  /* Safari */
-  -ms-user-select: none;      /* IE 10 and IE 11 */
-  user-select: none;          /* Standard syntax */
+  background-attachment: fixed;
+  cursor: url('cursors/prettybutterfly.cur'), auto;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
+/*Prevent image dragging*/
 img {
   -webkit-user-drag: none;
   user-select: none;
   pointer-events: none;
 }
 
+/*Prepare Fonts*/
 @font-face {
   font-family: 'PixelFont';
   src: url('../fonts/PixelOperator-Bold.ttf') format('truetype');
 }
+@font-face {
+  font-family: "Chicago";
+  src: url('../fonts/ChicagoFLF.ttf') format("truetype");
+}
 
+/*Set default for paragraph text*/
 p {
   font-family: PixelFont;
   font-size: 20px;
-  margin: 10px 0; /* Reduces line spacing between paragraphs */
+  margin: 10px 0;
   padding: 0;
   line-height: 1.1;
 }
 
-/*ABOUT ME TEXT*/
+/* Controls All Hyperlinks */
+a {
+  color: #0073e6;
+}
+
+a:hover {
+  cursor: url('cursors/prettybutterflypoint.cur'), auto;
+}
+
+
+/* -------------- MAIN WINDOW -------------- */
+.container {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 972px;
+  overflow: hidden;
+  margin: 0 auto;
+  min-height: 610px;
+  max-height: 610px;
+  border-radius: 0 0 5px 5px;
+  border: 2px solid #f029ba;
+  background-attachment: scroll;
+  background-image: url("gifs/rbowlinebg.gif");
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+
+/* -------------- TASKBAR AT TOP OF MAIN CONTAINER -------------- */
+.taskbar {
+  box-sizing: border-box;
+  width: 972px;
+  margin: 20px auto 0 auto;
+  background-color: #f029ba;
+  height: 24px;
+  border-radius: 5px 5px 0 0;
+  border: 2px solid #f029ba;
+  border-bottom: none;
+  text-align: right;
+  font-family: ms gothic, courier;
+  color: white;
+  padding:5px 8px 5px 0;
+  font-size: 14px;
+}
+
+
+/* -------------- BOX 1: About Me Header -------------- */
+.box1 {
+  width: 750px;
+  padding: 2px 9px;
+  margin-top: 10px;
+  margin-left: 185px;
+  border: 2px solid #f029ba;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f029ba;
+  position: relative;
+  overflow: hidden;
+  height: 85px;
+}
+
 .about-glitter {
   text-align: center;
   margin-top: 15px;
-}
-
-.about-me-gif {
-  max-height: 100%;
   height: auto;
 }
 
@@ -47,50 +112,37 @@ p {
   position: absolute;
   width: 75px;
   height: 75px;
-  top: 5px;
-  right: 10px;
+  top: 8px;
 }
 
 .butterfly-left {
-  top: 5px;
-  left: 11px;
+  left: 10px;
 }
 
 .butterfly-right {
-  top: 5px;
   right: 10px;
   transform: scaleX(-1);
 }
 
-.main, .buttons {
-  width: 760px;
-  padding: 2px 9px;
-  background-color: #fff;
+
+/* FORMATTING FOR AREA CONTAINING BOXES 2-5 */
+.content-boxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 175px;
 }
 
-.main, .buttons, .wrapper{
-  margin-left: 180px;
-  margin-bottom: 8px;
-}
-
-/*CONTROLS WHITE BOX WITH WELCOME TEXT*/
-.first{
-  margin-top: 10px;
-}
-
-.wrapper {
-    display: flex;
-    flex-direction: column; /* Stack rows vertically */
-    align-items: center; /* Center align rows horizontally */
-    gap: 10px; /* Adds spacing between rows */
-}
-
+/* GENERAL FORMATTING FOR ALL CONTENT BOXES */
 .row {
-    display: flex; /* Keeps boxes in each row side by side */
-    justify-content: center; /* Centers the row */
-    gap: 10px; /* Adds spacing between boxes in the row */
+  display: flex;
+  justify-content: center;
+  gap: 10px; /*Space between boxes sides*/
+  margin-top: 10px; /*Space between boxes tops/bottoms*/
 }
 
+
+/* -------------- BOXES 2 & 3 -------------- */
 .box2, .box3{
   width: 360px;
   max-height: 250px;
@@ -103,6 +155,15 @@ p {
   overflow: auto;
 }
 
+.mood-icon {
+    width: 25px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+
+/* -------------- BOX 4: PICTURE OF ME -------------- */
 .box4{
   width: 322px;
   height: 242px;
@@ -119,14 +180,16 @@ p {
   padding-left: 10px;
 }
 
+
+/* -------------- BOX 5: IPOD INTERFACE -------------- */
 .box5 {
   width: 440px;
   height: auto;
   border-radius: 5px;
   padding: 5px 9px;
-  display: flex; /* Added */
-  align-items: center; /* Vertically aligns content */
-  justify-content: center; /* Horizontally centers content */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: visible;
 }
 
@@ -134,7 +197,7 @@ p {
   font-size:14px;
   background-image: url(pics/colorfulmetallic.jpg);
   background-size: cover;
-  border: 1px solid #c929f0;
+  border: 2px solid #f029ba;
   border-radius: 10px;
   padding: 15px;
   font-family: "Chicago", monospace;
@@ -147,7 +210,7 @@ p {
 .ipod-screen {
   background: #d4d4d4;
   border-radius: 10px;
-  border: 1px solid #c929f0;
+  border: 1px solid #f029ba;
   padding: 6px;
   padding-top: 0;
   margin: 10px;
@@ -198,6 +261,7 @@ p {
   height: auto;
 }
 
+/*Song List on Ipod Screen */
 .song-list {
   list-style: none;
   padding: 0;
@@ -207,19 +271,6 @@ p {
   border: 1px solid #ccc;
   scrollbar-width: thin;
   scrollbar-color: #c929f0 #c929f0;
-}
-
-.song-item:nth-child(odd) {
-  background-color: #f9f9f9;
-}
-
-.song-item:nth-child(even) {
-  background-color: #e8e8e8;
-}
-
-@font-face {
-  font-family: "Chicago";
-  src: url('../fonts/ChicagoFLF.ttf') format("truetype");
 }
 
 .song-item {
@@ -233,6 +284,16 @@ p {
   color: #333;
 }
 
+.song-item:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.song-item:nth-child(even) {
+  background-color: #e8e8e8;
+}
+
+
+/* Controls for iPod */
 .ipod-controls {
     display: flex;
     flex-direction: column;
@@ -246,12 +307,11 @@ p {
     padding: 5px;
 }
 
-
 .controls-row {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
 }
 
 .center-button {
@@ -266,109 +326,37 @@ p {
 .wheel-button, .menu-button, .play-button {
   background: none;
   border: none;
-  padding: 3px;
   color: white;
   font-size: 12px;
 }
 
 .menu-button {
   font-weight: bold;
-  margin-bottom: 5px; /* Reduced margin */
+  margin-bottom: 3px;
 }
 
 .play-button {
-  margin-top: 5px; /* Reduced margin */
+  margin-top: 3px;
 }
 
-.mood-icon {
-    width: 25px;
-    height: auto;
-    vertical-align: middle;
-    margin-left: 5px;
-}
 
-.main {
-  border: 2px solid #f029ba;
-  border-radius: 5px;
-  text-align: center;
-  background-color: #f029ba;
-  position: relative;
-  overflow: hidden;
-  height: 85px;
-}
 
-/*TOP OF PANEL TASK BAR*/
-.idk {
-    width: 972px;
-    margin: 20px auto 0 auto;
-    background-color: #f029ba;
-    height: 24px;
-    border-radius: 5px 5px 0 0;
-    border: 2px solid #f029ba;
-    border-bottom: none;
-    text-align: right;
-    font-family: ms gothic, courier;
-    color: white;
-    padding:5px 8px 5px 0;
-    font-size: 14px;
-}
 
-a {
-  color: #0073e6;
-}
-
-a:hover {
-  cursor: url('../cursors/hearthelp.cur'), auto;
-}
-
-/*CONTROLS BACKGROUND OF MAIN WINDOW*/
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 972px;
-  overflow: hidden;
-  margin: 0 auto;
-  border-top: 0;
-  min-height: 610px;
-  max-height: 610px;
-  border-radius: 0 0 5px 5px;
-  border: 2px solid #f029ba;
-  background-attachment: scroll;
-  background-image: url("gifs/rbowlinebg.gif");
-  background-size: auto;
-  background-repeat: repeat;
-}
-
-.idk, .container {
-    box-sizing: border-box;
-}
-
-.buttons {
-  border: 2px solid #f029ba;
-  border-radius: 5px;
-  margin-bottom: 15px;
-}
+/* -------------- NAVIGATION PANEL -------------- */
 
 /*CONTROLS NAV BAR POSITION*/
 nav {
   z-index: 99;
   position: absolute;
   width: 150px;
-  min-height: 610px;
-  max-height: 610px;
+  min-height: 607px;
+  max-height: 607px;
   padding-left: 20px;
   border-right: 2px solid #f029ba;
+  border-radius: 0 0 0 5px;
   background-image: url("pics/pinkcheetah.jpg");
   background-size: cover;
   background-repeat: repeat-y;
-}
-
-/*CONTROLS NAV BUTTON SIZE*/
-.navlink {
-  box-sizing: border-box;
-  width: 130px;
-  margin-bottom: 15px;
 }
 
 /*STYLES NAV BUTTON TEXT*/
@@ -378,13 +366,22 @@ nav {
   text-decoration: none!important;
 }
 
+.buttons {
+  border: 2px solid #f029ba;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
 /*CONTROLS NAV BUTTON/TEXT POSITION*/
 .navlink {
   display: block;
   height: 35px;
   border-radius: 5px;
+  box-sizing: border-box;
+  width: 130px;
+  margin-bottom: 15px;
   /*BELOW: MOVES TEXT*/
-  padding: 8px 0;
+  padding: 5px 0;
   color: white;
   text-align: center;
   border: 2px solid #f029ba;
@@ -406,11 +403,13 @@ nav {
   display: block;
 }
 
-#templaterr-sidebar {
-  padding-right: 20px; /* Same as nav links */
+/*Add padding so it matches nav links' center*/
+#sidebar {
+  padding-right: 20px;
 }
 
-/*CUTE CHARACTER IN LOWER RIGHT*/
+
+/* -------------- CUTE CHARACTER - BOTTOM LEFT CORNER OF SCREEN -------------- */
 .character{
   position: fixed; 
   left: 30px; 
@@ -419,4 +418,72 @@ nav {
   height: 140px;
   background-image: url(gifs/computergirl.gif);
   background-size: 150px 140px;
+}
+
+
+/* -------------- MOBILE POPUP WARNING -------------- */
+.mobile-popup, .mobile-overlay {
+    display: none;
+}
+
+.mobile-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 330px;
+    z-index: 9999;
+}
+
+.mobile-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9998;
+}
+
+/* Popup content styles */
+.mobile-popup .title-bar-text {
+    padding-left: 3px;
+    font-family: 'PixelFont';
+    font-size: 20px;
+}
+
+.mobile-popup .window-body {
+    margin: 0;
+}
+
+.mobile-popup .message-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.mobile-popup .error-icon {
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    pointer-events: none;
+}
+
+.mobile-popup p {
+    line-height: 1.2;
+    font-size: 20px;
+    margin: 0;
+    font-family: 'PixelFont';
+}
+
+.mobile-popup .field-row {
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-popup button {
+    min-width: 80px;
+    font-family: 'PixelFont';
+    font-size: 18px;
 }
