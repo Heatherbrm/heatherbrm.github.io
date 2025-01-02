@@ -47,6 +47,13 @@ a:hover {
   cursor: url('cursors/prettybutterflypoint.cur'), auto;
 }
 
+.star-divider {
+  background-image: url('gifs/flyingstars.gif');
+  background-repeat: repeat-x; /* Repeats the image horizontally */
+  background-position: top center; /* Aligns it at the top center of the page */
+  height: 42px; /* Adjust the height to match your pattern's height */
+}
+
 
 /* -------------- MAIN WINDOW -------------- */
 .container {
@@ -72,7 +79,7 @@ a:hover {
 .taskbar {
   box-sizing: border-box;
   width: 972px;
-  margin: 20px auto 0 auto;
+  margin: 5px auto 0 auto;
   background-color: #f029ba;
   height: 24px;
   border-radius: 5px 5px 0 0;
@@ -207,21 +214,185 @@ a:hover {
   justify-content: space-between;
 }
 
+/* iPod Screen with LCD Screen Effects */
 .ipod-screen {
+  position: relative;
   background: #d4d4d4;
   border-radius: 10px;
   border: 1px solid #f029ba;
-  padding: 6px;
-  padding-top: 0;
-  margin: 10px;
-  margin-left: 0;
-  margin-right: 0;
-  flex-grow: 1;
-  height: auto;
+  padding: 6px 6px 0;
+  margin: 10px 0;
+  flex: 1;
   min-height: 170px;
   max-width: 68%;
-  box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
 }
+
+/* Base LCD texture */
+.ipod-screen::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(
+      90deg,
+      rgba(255, 0, 0, 0.1) 1px, /*Red*/
+      transparent 1px
+    ),
+    
+    linear-gradient(
+      90deg,
+      rgba(0, 255, 0, 0.1) 2px, /*Green*/
+      transparent 2px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 255, 0.1) 3px, /*Green*/
+      transparent 3px
+    );
+  background-size: 3px 1px;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+/* Rainbow effect overlay */
+.ipod-screen::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(
+      45deg,
+      transparent 0%,
+      rgba(255, 0, 0, 0.1) 45%,
+      rgba(0, 255, 0, 0.1) 50%,
+      rgba(0, 0, 255, 0.1) 55%,
+      transparent 100%
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.05) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+  mix-blend-mode: color;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+
+/*Song List on Ipod Screen */
+.song-list {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  max-height: 158px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  scrollbar-width: thin;
+  scrollbar-color: #c929f0 #c929f0;
+  background: #d4d4d4;
+}
+
+/* Base LCD texture */
+.song-list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(
+      90deg,
+      rgba(255, 0, 0, 0.1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(0, 255, 0, 0.1) 2px,
+      transparent 2px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 255, 0.1) 3px,
+      transparent 3px
+    );
+  background-size: 3px 1px;
+  pointer-events: none;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+/* Rainbow effect overlay */
+.song-list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    linear-gradient(
+      45deg,
+      transparent 0%,
+      rgba(255, 0, 0, 0.5) 45%,
+      rgba(0, 255, 0, 0.5) 50%,
+      rgba(0, 0, 255, 0.5) 55%,
+      transparent 100%
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+  mix-blend-mode: color;
+  pointer-events: none;
+  opacity: 0.4;
+  z-index: 2;
+}
+
+.song-item {
+  position: relative;
+  text-shadow: 
+    -1px 0 1px rgba(255,0,0,0.9),
+    1px 0 1px rgba(0,255,255,0.9);
+  z-index: 3;
+  font-size: 14px;
+  color: #333;
+  padding: 4px 5px;
+  background-color: rgba(249, 249, 249, 0.7);
+}
+
+.song-item:nth-child(even) {
+  background-color: rgba(232, 232, 232, 0.7);
+}
+
+.song-item:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(255,0,0,0.1),
+    rgba(255,255,0,0.1),
+    rgba(0,255,0,0.1),
+    rgba(0,255,255,0.1),
+    rgba(0,0,255,0.1)
+  );
+  text-shadow: 
+    -1px 0 1px rgba(255,0,0,0.9),
+    1px 0 1px rgba(0,255,255,0.9);
+}
+/*Done with LCD Formatting Now*/
+
 
 .screen-header {
   text-align: center;
@@ -230,6 +401,9 @@ a:hover {
   margin: 0;
   padding: 0;
   margin-bottom: 5px;
+  text-shadow: 
+    -1px 0 1px rgba(255,0,0,0.8),
+    1px 0 1px rgba(0,255,255,0.8);
   font-weight: bold;
   font-size: 16px;
   color: #333;
@@ -244,7 +418,7 @@ a:hover {
   margin: 0;
   padding: 0;
   padding-bottom: 2px;
-  width: 40px;
+  width: 35px;
   height: auto;
 }
 
@@ -256,40 +430,10 @@ a:hover {
 .musicnote-right {
   margin: 0;
   padding: 0;
-  padding-top: 2px;
-  width: 38px;
+  padding-top: 1px;
+  padding-bottom: 4px;
+  width: 35px;
   height: auto;
-}
-
-/*Song List on Ipod Screen */
-.song-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 0;
-  max-height: 158px;
-  overflow-y: auto;
-  border: 1px solid #ccc;
-  scrollbar-width: thin;
-  scrollbar-color: #c929f0 #c929f0;
-}
-
-.song-item {
-  font-size: 14px;
-  color: #333;
-  padding: 4px 5px;
-}
-
-.song-item:hover {
-  background-color: #d0d0ff;
-  color: #333;
-}
-
-.song-item:nth-child(odd) {
-  background-color: #f9f9f9;
-}
-
-.song-item:nth-child(even) {
-  background-color: #e8e8e8;
 }
 
 
@@ -342,7 +486,6 @@ a:hover {
 
 
 
-
 /* -------------- NAVIGATION PANEL -------------- */
 
 /*CONTROLS NAV BAR POSITION*/
@@ -363,14 +506,13 @@ nav {
 /*STYLES NAV BUTTON TEXT*/
 .navlinktext {
   font-family: PixelFont;
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none!important;
 }
 
 .buttons {
   border: 2px solid #f029ba;
   border-radius: 5px;
-  margin-bottom: 15px;
 }
 
 /*CONTROLS NAV BUTTON/TEXT POSITION*/
@@ -380,7 +522,7 @@ nav {
   border-radius: 5px;
   box-sizing: border-box;
   width: 130px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   /*BELOW: MOVES TEXT*/
   padding: 5px 0;
   color: white;
@@ -392,16 +534,27 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 130px;
   margin: 5px 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .sideimage img {
   margin: 0;
   max-height: 75px;
-  max-width: 100px;
-  display: block;
+  max-width: 90px;
+}
+
+.blinkies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  margin-top: 10px;
+}
+
+.blinkies img {
+  margin: 0;
+  max-width: 140px;
 }
 
 /*Add padding so it matches nav links' center*/
@@ -411,16 +564,37 @@ nav {
 
 
 /* -------------- CUTE CHARACTER - BOTTOM LEFT CORNER OF SCREEN -------------- */
+/*
 .character{
   position: fixed; 
-  left: 30px; 
-  bottom: -5px; 
+  left: 10px; 
+  bottom: 0; 
   width: 150px;
   height: 140px;
   background-image: url(gifs/computergirl.gif);
   background-size: 150px 140px;
 }
+*/
 
+.character{
+  position: fixed; 
+  left: 10px; 
+  bottom: 5px; 
+  width: 170px;
+  height: 170px;
+  background-image: url(pics/imacfishtank.png);
+  background-size: 170px 170px;
+}
+
+.fishtank {
+  position: fixed; 
+  right: 10px;
+  bottom: 0;
+  width: 150px;
+  height: 165px;
+  background-image: url(gifs/fishtank.webp);
+  background-size: 150px 165px;
+}
 
 /* -------------- MOBILE POPUP WARNING -------------- */
 .title-bar-controls span {
