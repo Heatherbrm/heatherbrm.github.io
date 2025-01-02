@@ -3,7 +3,7 @@ body {
   font-family: ms gothic, courier;
   margin: 0;
   font-size:16px;
-  background-image: url(gifs/starszoomout.webp);
+  background-image: url(gifs/purplepixels.gif);
   background-size: auto;
   background-repeat: repeat;
   background-attachment: fixed;
@@ -47,12 +47,14 @@ a:hover {
   cursor: url('cursors/prettybutterflypoint.cur'), auto;
 }
 
+/*
 .star-divider {
   background-image: url('gifs/flyingstars.gif');
-  background-repeat: repeat-x; /* Repeats the image horizontally */
-  background-position: top center; /* Aligns it at the top center of the page */
-  height: 42px; /* Adjust the height to match your pattern's height */
+  background-repeat: repeat-x;
+  background-position: top center;
+  height: 42px;
 }
+*/
 
 
 /* -------------- MAIN WINDOW -------------- */
@@ -79,7 +81,7 @@ a:hover {
 .taskbar {
   box-sizing: border-box;
   width: 972px;
-  margin: 5px auto 0 auto;
+  margin: 15px auto 0 auto;
   background-color: #f029ba;
   height: 24px;
   border-radius: 5px 5px 0 0;
@@ -564,17 +566,6 @@ nav {
 
 
 /* -------------- CUTE CHARACTER - BOTTOM LEFT CORNER OF SCREEN -------------- */
-/*
-.character{
-  position: fixed; 
-  left: 10px; 
-  bottom: 0; 
-  width: 150px;
-  height: 140px;
-  background-image: url(gifs/computergirl.gif);
-  background-size: 150px 140px;
-}
-*/
 
 .character{
   position: fixed; 
