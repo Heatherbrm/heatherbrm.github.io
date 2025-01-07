@@ -3,7 +3,7 @@ body {
   font-family: ms gothic, courier;
   margin: 0;
   font-size:16px;
-  background-image: url(gifs/purplepixels.gif);
+  background-image: url(gifs/geyastar.webp);
   background-size: auto;
   background-repeat: repeat;
   background-attachment: fixed;
@@ -69,7 +69,7 @@ a:hover {
   min-height: 610px;
   max-height: 610px;
   border-radius: 0 0 5px 5px;
-  border: 2px solid #f029ba;
+  border: 5px solid #7e00b4;
   background-attachment: scroll;
   background-image: url("gifs/rbowlinebg.gif");
   background-size: auto;
@@ -82,10 +82,10 @@ a:hover {
   box-sizing: border-box;
   width: 972px;
   margin: 15px auto 0 auto;
-  background-color: #f029ba;
+  background-color: #7e00b4;
   height: 24px;
   border-radius: 5px 5px 0 0;
-  border: 2px solid #f029ba;
+  border: 2px solid #7e00b4;
   border-bottom: none;
   text-align: right;
   font-family: ms gothic, courier;
@@ -101,10 +101,10 @@ a:hover {
   padding: 2px 9px;
   margin-top: 10px;
   margin-left: 185px;
-  border: 2px solid #f029ba;
+  border: 2px solid #7e00b4;
   border-radius: 5px;
   text-align: center;
-  background-color: #f029ba;
+  background-color: #7e00b4;
   position: relative;
   overflow: hidden;
   height: 85px;
@@ -156,7 +156,7 @@ a:hover {
   width: 360px;
   max-height: 250px;
   background-color: #ffcefe;
-  border: 2px solid #f029ba;
+  border: 2px solid #7e00b4;
   border-radius: 5px;
   padding: 5px 9px;
   text-align: left;
@@ -206,7 +206,7 @@ a:hover {
   font-size:14px;
   background-image: url(pics/colorfulmetallic.jpg);
   background-size: cover;
-  border: 2px solid #f029ba;
+  border: 2px solid #7e00b4;
   border-radius: 10px;
   padding: 15px;
   font-family: "Chicago", monospace;
@@ -221,7 +221,7 @@ a:hover {
   position: relative;
   background: #d4d4d4;
   border-radius: 10px;
-  border: 1px solid #f029ba;
+  border: 1px solid #7e00b4;
   padding: 6px 6px 0;
   margin: 10px 0;
   flex: 1;
@@ -447,7 +447,7 @@ a:hover {
     justify-content: center;
     width: 100px;
     height: 100px;
-    background-color: #f029ba;
+    background-color: #7e00b4;
     border-radius: 50%;
     gap: 5px;
     padding: 5px;
@@ -495,11 +495,9 @@ nav {
   z-index: 99;
   position: absolute;
   width: 150px;
-  min-height: 607px;
-  max-height: 607px;
+  height: 600px;
   padding-left: 20px;
-  border-right: 2px solid #f029ba;
-  border-radius: 0 0 0 5px;
+  border-right: 2px solid #7e00b4;
   background-image: url("pics/pinkcheetah.jpg");
   background-size: cover;
   background-repeat: repeat-y;
@@ -513,7 +511,7 @@ nav {
 }
 
 .buttons {
-  border: 2px solid #f029ba;
+  border: 2px solid #7e00b4;
   border-radius: 5px;
 }
 
@@ -529,7 +527,7 @@ nav {
   padding: 5px 0;
   color: white;
   text-align: center;
-  border: 2px solid #f029ba;
+  border: 2px solid #7e00b4;
 }
 
 .sideimage {
