@@ -100,7 +100,7 @@ a:hover {
   width: 750px;
   padding: 2px 9px;
   margin-top: 10px;
-  margin-left: 185px;
+  margin-left: 181px;
   border: 2px solid #7e00b4;
   border-radius: 5px;
   text-align: center;
@@ -139,7 +139,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 175px;
+  margin-left: 171px;
 }
 
 /* GENERAL FORMATTING FOR ALL CONTENT BOXES */
