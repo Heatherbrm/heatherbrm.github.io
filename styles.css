@@ -108,17 +108,28 @@ button {
     font-size: 22px;
 }
 
-/* Footer elements */
-.construction-banner {
+/*Banners*/
+.banner-container {
     position: fixed;
-    bottom: 35px;
-    left: 0;
+    bottom: 45px;
     width: 100%;
     display: flex;
     justify-content: center;
     z-index: 1;
     pointer-events: none;
 }
+
+.banner {
+    margin: 0 5px;
+    pointer-events: auto;
+}
+
+.banner img {
+    display: block;
+    width: auto;
+    height: 40px;
+}
+
 
 .taskbar {
     position: fixed;
