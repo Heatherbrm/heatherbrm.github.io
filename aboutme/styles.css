@@ -3,8 +3,8 @@ body {
   font-family: ms gothic, courier;
   margin: 0;
   font-size:16px;
-  background-image: url(gifs/geyastar.webp);
-  background-size: auto;
+  background-image: url(gifs/greyglitter.webp);
+  background-size: 250px 250px;
   background-repeat: repeat;
   background-attachment: fixed;
   cursor: url('cursors/prettybutterfly.cur'), auto;
