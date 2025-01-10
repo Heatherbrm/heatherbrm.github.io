@@ -128,6 +128,7 @@ button {
     display: block;
     width: auto;
     height: 40px;
+    pointer-events: none;
 }
 
 
