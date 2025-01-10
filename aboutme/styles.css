@@ -534,12 +534,11 @@ nav {
   justify-content: center;
   align-items: center;
   margin: 5px 0;
-  margin-bottom: 5px;
 }
 
 .sideimage img {
   margin: 0;
-  max-height: 75px;
+  max-height: 60px;
   max-width: 90px;
 }
 
@@ -547,13 +546,12 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5px 0;
-  margin-top: 10px;
+  margin: 8px 0;
 }
 
 .blinkies img {
   margin: 0;
-  max-width: 140px;
+  max-width: 150px;
 }
 
 /*Add padding so it matches nav links' center*/
