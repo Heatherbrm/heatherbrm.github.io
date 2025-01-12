@@ -160,6 +160,17 @@ button {
     src: url('fonts/PixelOperator.ttf') format('truetype');
 }
 
+
+#counter-container {
+    position: fixed;
+    bottom: 100px;
+    left: 50%;
+    z-index: 2;
+}
+
+
+
+
 /* Mobile pop-up warning */
 .mobile-popup, .mobile-overlay {
     display: none;
