@@ -106,7 +106,13 @@ legend {
 button {
     font-family: 'PixelFont';
     font-size: 22px;
-    min-width: 110px;
+    min-width: 110px !important;
+}
+
+/* Ensure main navigation buttons are properly sized */
+fieldset .field-row button {
+    min-width: 110px !important;
+    width: auto;
 }
 
 /*Banners*/
