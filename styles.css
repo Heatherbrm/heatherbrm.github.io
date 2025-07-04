@@ -106,6 +106,7 @@ legend {
 button {
     font-family: 'PixelFont';
     font-size: 22px;
+    min-width: 110px;
 }
 
 /*Banners*/
