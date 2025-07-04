@@ -58,7 +58,7 @@ button {
     inset -2px -2px grey,
     inset 2px 2px #dfdfdf;
   border-radius: 0;
-  min-width: 75px;
+  min-width: 110px;
   min-height: 23px;
   padding: 0 12px;
 }
