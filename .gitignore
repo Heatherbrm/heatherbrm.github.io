@@ -12,6 +12,3 @@ assets/libs/
 Gemfile.lock
 node_modules/
 vendor
-
-# Private content (legacy)
-aboutme/
