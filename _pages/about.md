@@ -27,8 +27,8 @@ latest_posts:
   limit: 3
 ---
 
-I am a PhD student in Computer Science at the [University of Illinois Urbana-Champaign](https://illinois.edu), advised by [Dr. H. Chad Lane](https://education.illinois.edu/faculty/chadlane) and affiliated with the [INVITE Institute](https://invite.illinois.edu/). My research sits at the intersection of **AI for education** and **interpretability** — I build AI teaching assistants that ground their reasoning in classroom data using retrieval-augmented generation, tool-calling, and SQL agents, and I'm increasingly interested in understanding *why* large language models behave the way they do.
+I am a PhD student in Computer Science at the University of Illinois Urbana-Champaign, advised by Dr. H. Chad Lane at the [INVITE Institute](https://invite.illinois.edu/). I am leading development of an AI teaching assistant that integrates retrieval-augmented generation, tool-calling, and SQL agents to analyze classroom data and student progress. I was selected for the 2026 AIVO AI4Ed Summer Fellowship, a Google.org-funded cross-institute AI in Education research initiative.
 
-I was selected as a 2026 [AIVO AI4Ed Summer Fellow](https://aivo.illinois.edu/) (a Google.org-funded cross-institute research initiative) and hold a [Fiddler Innovation Graduate Fellowship](https://siebelschool.illinois.edu/about/awards/student-awards/fiddler) at Illinois. I previously developed an LLM-based safety classification system for [UIUC.chat](https://uiuc.chat) at NCSA, and before grad school I published on ML-based cybersecurity (SMS malware classification, adversarial attacks on darknet traffic analysis) at the University of Southern Mississippi, where I graduated summa cum laude.
+Before Illinois, I earned a B.S. in Computer Science (summa cum laude, Honors College) from the University of Southern Mississippi, where I worked in the Cyber Innovations Lab on ML-based cybersecurity.
 
-Feel free to reach out at **hbroome [at] illinois [dot] edu** — I'm always happy to chat about AI in education, interpretability, or research collaborations.
+Reach me at **hbroome [at] illinois [dot] edu**.
