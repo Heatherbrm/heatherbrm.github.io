@@ -106,13 +106,13 @@ cv:
         summary: "Pages 937–942. DOI: 10.1109/CSCI58124.2022.00167"
 
     Awards:
-      - title: Fiddler Innovation Graduate Student Fellowship
-        date: 2025
-        awarder: University of Illinois Urbana-Champaign
-
       - title: AIVO AI4Ed Summer Fellowship
         date: 2026
         awarder: Google.org / AIVO Institute
+
+      - title: Fiddler Innovation Graduate Student Fellowship Award
+        date: 2025-10-31
+        awarder: University of Illinois Urbana-Champaign
 
       - title: Honors College Discovery Scholar Research Grant
         date: 2022
