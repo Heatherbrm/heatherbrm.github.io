@@ -1,2 +1,17 @@
-# About Me folder - keep private
-aboutme/ 
+_site
+.bundle
+.DS_store
+.idea
+.jekyll-cache
+.jekyll-metadata
+.ruby-version
+.sass-cache
+.tweet-cache
+.venv
+assets/libs/
+Gemfile.lock
+node_modules/
+vendor
+
+# Private content (legacy)
+aboutme/

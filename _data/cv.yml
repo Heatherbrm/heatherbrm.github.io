@@ -1,0 +1,125 @@
+cv:
+  name: Heather Broome
+  label: PhD Student in Computer Science
+  email: hbroome@illinois.edu
+  phone: (601) 606-0271
+  website: https://www.heatherbroome.com
+  location: Urbana, IL
+  image: ""
+  summary: PhD student in Computer Science at the University of Illinois Urbana-Champaign, advised by Dr. H. Chad Lane. Research focuses on AI for education and interpretability.
+
+  social_networks:
+    - network: GitHub
+      username: Heatherbrm
+
+  sections:
+    Education:
+      - institution: University of Illinois Urbana-Champaign
+        location: Urbana-Champaign, IL
+        url: https://illinois.edu/
+        area: Computer Science
+        studyType: PhD
+        start_date: 2024-08
+        end_date: 2029-05
+        highlights:
+          - Advised by Dr. H. Chad Lane.
+
+      - institution: University of Southern Mississippi
+        location: Hattiesburg, MS
+        url: https://www.usm.edu/
+        area: Computer Science
+        studyType: B.S., Summa Cum Laude, Honors College
+        start_date: 2020-08
+        end_date: 2024-05
+
+    Experience:
+      - company: INVITE Institute, University of Illinois Urbana-Champaign
+        position: Graduate Researcher
+        location: Urbana-Champaign, IL
+        start_date: 2024-08
+        end_date: present
+        summary: Advised by Dr. H. Chad Lane.
+        highlights:
+          - Leading development of an AI teaching assistant that integrates retrieval-augmented generation, tool-calling, and SQL agents to analyze classroom data and student progress.
+          - Selected for the AIVO AI4Ed Summer Fellowship Program 2026, a Google.org-funded cross-institute AI in Education research initiative.
+
+      - company: National Center for Supercomputing Applications (NCSA)
+        position: Graduate Mentor, REU FoDOMMaT
+        location: Urbana-Champaign, IL
+        start_date: 2025-05
+        end_date: 2025-08
+        highlights:
+          - Mentored undergraduates on ML research projects.
+          - Taught a PyTorch-focused deep learning bootcamp covering model training, evaluation, and ethics.
+
+      - company: Center for Artificial Intelligence Innovation (CAII), NCSA
+        position: Graduate Researcher
+        location: Urbana-Champaign, IL
+        start_date: 2025-01
+        end_date: 2025-05
+        summary: Advised by Dr. Volodymyr Kindratenko.
+        highlights:
+          - Developed an LLM-based safety classification system to detect unsafe prompts on UIUC.chat, a tutoring platform serving UIUC students.
+
+      - company: NCSA, REU FoDOMMaT
+        position: Undergraduate Researcher
+        location: Urbana-Champaign, IL
+        start_date: 2023-05
+        end_date: 2023-08
+        summary: Advised by Dr. Chenhui Shao and Dr. Seid Koric.
+        highlights:
+          - Adapted pretrained image classification models for real-time quality prediction in ultrasonic welding.
+
+      - company: Cyber Innovations Lab, University of Southern Mississippi
+        position: Undergraduate Researcher
+        location: Hattiesburg, MS
+        start_date: 2022-05
+        end_date: 2024-05
+        summary: Advised by Dr. Nick Rahimi.
+        highlights:
+          - Published two papers on ML-based cybersecurity, focusing on SMS malware classification and adversarial attack detection in darknet traffic.
+          - Completed undergraduate thesis developing and fine-tuning an LSTM on historical text, investigating preprocessing methods that reduced training time while maintaining output quality.
+
+    Publications:
+      - title: Adversarial Attack Optimization and Evaluation for Machine Learning-based Dark Web Traffic Analysis
+        authors:
+          - N. Harrison
+          - H. Broome
+          - Y. Shrestha
+          - A. Robles
+          - A. Gautam
+          - N. Rahimi
+        publisher: 33rd International Conference on Software Engineering and Data Engineering (SEDE)
+        releaseDate: 2024
+        url: https://doi.org/10.1007/978-3-031-75201-8_1
+        summary: "Pages 3–13. DOI: 10.1007/978-3-031-75201-8_1"
+
+      - title: "SMS Malware Detection: A Machine Learning Approach"
+        authors:
+          - H. Broome
+          - Y. Shrestha
+          - N. Harrison
+          - N. Rahimi
+        publisher: 2022 International Conference on Computational Science and Computational Intelligence (CSCI)
+        releaseDate: 2022
+        url: https://doi.org/10.1109/CSCI58124.2022.00167
+        summary: "Pages 937–942. DOI: 10.1109/CSCI58124.2022.00167"
+
+    Awards:
+      - title: Fiddler Innovation Graduate Student Fellowship
+        date: 2025
+        awarder: University of Illinois Urbana-Champaign
+
+      - title: AIVO AI4Ed Summer Fellowship
+        date: 2026
+        awarder: Google.org / AIVO Institute
+
+      - title: Honors College Discovery Scholar Research Grant
+        date: 2022
+        awarder: University of Southern Mississippi
+
+    Skills:
+      - name: Programming
+        keywords: "Python, C++, SQL"
+      - name: ML / Data
+        keywords: "PyTorch, TensorFlow, scikit-learn, pandas, HuggingFace"
