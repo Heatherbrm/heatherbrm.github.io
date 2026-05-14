@@ -27,7 +27,7 @@ latest_posts:
   limit: 3
 ---
 
-I am a PhD student in Computer Science at the University of Illinois Urbana-Champaign, advised by Dr. H. Chad Lane at the [INVITE Institute](https://invite.illinois.edu/). I am leading development of an AI teaching assistant that integrates retrieval-augmented generation, tool-calling, and SQL agents to analyze classroom data and student progress. I was selected for the 2026 AIVO AI4Ed Summer Fellowship, a Google.org-funded cross-institute AI in Education research initiative.
+I am a PhD student in Computer Science at the University of Illinois Urbana-Champaign, advised by Dr. H Chad Lane at the [INVITE Institute](https://invite.illinois.edu/). My research focuses on improving the reliability and transparency of large language models, especially for educational applications.
 
 Before Illinois, I earned a B.S. in Computer Science from the University of Southern Mississippi, where I worked in the Cyber Innovations Lab on ML-based cybersecurity.
 
