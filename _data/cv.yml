@@ -3,10 +3,10 @@ cv:
   label: PhD Student in Computer Science
   email: hbroome@illinois.edu
   phone: (601) 606-0271
-  website: https://www.heatherbroome.com
-  location: Urbana, IL
+  website: www.heatherbroome.com
+  location: Champaign, IL
   image: ""
-  summary: PhD student in Computer Science at the University of Illinois Urbana-Champaign, advised by Dr. H. Chad Lane. Research focuses on AI for education and interpretability.
+  summary: PhD student in Computer Science at the University of Illinois Urbana-Champaign, advised by Dr. H Chad Lane. Research focuses on AI for education and interpretability.
 
   social_networks:
     - network: GitHub
@@ -38,31 +38,24 @@ cv:
         location: Champaign, IL
         start_date: 2024-08
         end_date: present
-        summary: Advised by Dr. H. Chad Lane.
+        summary: Advised by Dr. H Chad Lane.
         highlights:
           - Leading the development of an AI teaching assistant that helps teachers explore classroom data through conversation.
           - Selected for the AIVO AI4Ed Summer Fellowship Program 2026, a Google.org-funded cross-institute AI in Education research initiative.
 
       - company: National Center for Supercomputing Applications (NCSA)
-        position: Graduate Mentor, REU FoDOMMaT
+        position: Graduate Mentor and Researcher
         location: Champaign, IL
-        start_date: 2025-05
+        start_date: 2024-12
         end_date: 2025-08
-        highlights:
-          - Mentored undergraduates on ML research projects.
-          - Taught a PyTorch-focused deep learning bootcamp covering model training, evaluation, and ethics.
-
-      - company: Center for Artificial Intelligence Innovation (CAII), NCSA
-        position: Graduate Researcher
-        location: Champaign, IL
-        start_date: 2025-01
-        end_date: 2025-05
         summary: Advised by Dr. Volodymyr Kindratenko.
         highlights:
+          - Mentored undergraduates on ML research projects ([REU FoDOMMaT](https://reu.ncsa.illinois.edu/)).
+          - Taught a PyTorch-focused deep learning bootcamp covering model training, evaluation, and ethics.
           - Developed an LLM-based safety classification system to detect unsafe prompts on UIUC.chat, a tutoring platform serving UIUC students.
 
-      - company: NCSA, REU FoDOMMaT
-        position: Undergraduate Researcher
+      - company: National Center for Supercomputing Applications (NCSA)
+        position: Undergraduate Researcher (REU FoDOMMaT)
         location: Champaign, IL
         start_date: 2023-05
         end_date: 2023-08
