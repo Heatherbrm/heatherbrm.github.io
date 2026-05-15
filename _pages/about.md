@@ -24,7 +24,7 @@ latest_posts:
   limit: 3
 ---
 
-I am a PhD student in Computer Science at the University of Illinois Urbana-Champaign, advised by [Dr. H Chad Lane](https://www.hchadlane.net). I am part of the [INVITE Institute](https://invite.illinois.edu/), an NSF-funded AI research institute focused on developing intelligent learning technologies that better understand and support how students learn. I am also a member of [AI Interpretability @ Illinois](https://interpretability.web.illinois.edu/), a cross-lab research group studying interpretable architectures, mechanisms, and behaviors in AI systems.
+I am a PhD student in Computer Science at the University of Illinois Urbana-Champaign, advised by [Dr. H Chad Lane](https://www.hchadlane.net). I am part of the [INVITE Institute](https://invite.illinois.edu/), an NSF-funded AI research institute focused on developing intelligent learning technologies. I am also a member of [AI Interpretability @ Illinois](https://interpretability.web.illinois.edu/), a cross-lab research group studying interpretable architectures, mechanisms, and behaviors in AI systems.
 
 My research focuses on improving the reliability and transparency of large language models for educational applications.
 
