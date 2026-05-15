@@ -15,14 +15,14 @@ cv:
   sections:
     Education:
       - institution: University of Illinois Urbana-Champaign
-        location: Urbana-Champaign, IL
+        location: Champaign, IL
         url: https://illinois.edu/
         area: Computer Science
         studyType: PhD
         start_date: 2024-08
         end_date: 2029-05
         highlights:
-          - Advised by Dr. H. Chad Lane.
+          - Advised by Dr. H Chad Lane.
 
       - institution: University of Southern Mississippi
         location: Hattiesburg, MS
@@ -35,17 +35,17 @@ cv:
     Experience:
       - company: INVITE Institute, University of Illinois Urbana-Champaign
         position: Graduate Researcher
-        location: Urbana-Champaign, IL
+        location: Champaign, IL
         start_date: 2024-08
         end_date: present
         summary: Advised by Dr. H. Chad Lane.
         highlights:
-          - Leading development of an AI teaching assistant that integrates retrieval-augmented generation, tool-calling, and SQL agents to analyze classroom data and student progress.
+          - Leading the development of an AI teaching assistant that helps teachers explore classroom data through conversation.
           - Selected for the AIVO AI4Ed Summer Fellowship Program 2026, a Google.org-funded cross-institute AI in Education research initiative.
 
       - company: National Center for Supercomputing Applications (NCSA)
         position: Graduate Mentor, REU FoDOMMaT
-        location: Urbana-Champaign, IL
+        location: Champaign, IL
         start_date: 2025-05
         end_date: 2025-08
         highlights:
@@ -54,7 +54,7 @@ cv:
 
       - company: Center for Artificial Intelligence Innovation (CAII), NCSA
         position: Graduate Researcher
-        location: Urbana-Champaign, IL
+        location: Champaign, IL
         start_date: 2025-01
         end_date: 2025-05
         summary: Advised by Dr. Volodymyr Kindratenko.
@@ -63,7 +63,7 @@ cv:
 
       - company: NCSA, REU FoDOMMaT
         position: Undergraduate Researcher
-        location: Urbana-Champaign, IL
+        location: Champaign, IL
         start_date: 2023-05
         end_date: 2023-08
         summary: Advised by Dr. Chenhui Shao and Dr. Seid Koric.
@@ -108,7 +108,7 @@ cv:
     Awards:
       - title: AIVO AI4Ed Summer Fellowship
         date: 2026
-        awarder: Google.org / AIVO Institute
+        awarder: AIVO Institute
 
       - title: Fiddler Innovation Graduate Student Fellowship Award
         date: 2025-10-31
