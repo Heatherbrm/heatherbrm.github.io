@@ -14,7 +14,7 @@ footer_text: >
   Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and the <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 keywords: heather broome, phd, computer science, illinois, ai for education, interpretability, machine learning
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🌱 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: favicon.jpg # provide image name in /assets/img/ (or an emoji)
 
 url: https://www.heatherbroome.com # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
